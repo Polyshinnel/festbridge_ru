@@ -7,18 +7,18 @@
         <div class="box-container">
             <div class="event-banner__text-wrapper">
                 <div class="event-banner__text">
-                    <h1>РЕТРИТЫ</h1>
+                    <h1>{{$pageText['title']}}</h1>
                     <div class="event-banner__text-arrow-block">
                         <div class="event-banner__text-arrow">
                             <img src="assets/img/arrow-white.svg" alt="">
                         </div>
-                        <p>Иногда нам всем требуется духовное и физическое восстановление. Наши ретриты в живописнейших уголках ОАЭ помогут вам полностью перезагрузиться через проработки мышления, телесные практики и воссоединение с природой.</p>
+                        <p>{{$pageText['subtitle']}}</p>
                     </div>
                 </div>
 
                 <div class="event-banner__img">
-                    <a href="assets/img/retrits/gallery/1.webp" data-fancybox="gallery">
-                        <img src="assets/img/retrits/1.webp" alt="">
+                    <a href="/storage/{{$images[0]['img']}}" data-fancybox="gallery">
+                        <img src="/storage/{{$images[0]['thumb']}}" alt="">
                     </a>
                 </div>
             </div>
@@ -29,14 +29,14 @@
                 </div>
 
                 <div class="event-banner__img">
-                    <a href="assets/img/retrits/gallery/2.webp" data-fancybox="gallery">
-                        <img src="assets/img/retrits/2.webp" alt="">
+                    <a href="/storage/{{$images[1]['img']}}" data-fancybox="gallery">
+                        <img src="/storage/{{$images[1]['thumb']}}" alt="">
                     </a>
                 </div>
 
                 <div class="event-banner__img">
-                    <a href="assets/img/retrits/gallery/3.webp" data-fancybox="gallery">
-                        <img src="assets/img/retrits/3.webp" alt="">
+                    <a href="/storage/{{$images[2]['img']}}" data-fancybox="gallery">
+                        <img src="/storage/{{$images[2]['thumb']}}" alt="">
                     </a>
                 </div>
 
@@ -47,8 +47,8 @@
 
             <div class="event-banner__img-line">
                 <div class="event-banner__img">
-                    <a href="assets/img/retrits/gallery/4.webp" data-fancybox="gallery">
-                        <img src="assets/img/retrits/4.webp" alt="">
+                    <a href="/storage/{{$images[3]['img']}}" data-fancybox="gallery">
+                        <img src="/storage/{{$images[3]['thumb']}}" alt="">
                     </a>
                 </div>
 
@@ -57,37 +57,24 @@
                 </div>
 
                 <div class="event-banner__img">
-                    <a href="assets/img/retrits/gallery/5.webp" data-fancybox="gallery">
-                        <img src="assets/img/retrits/5.webp" alt="">
+                    <a href="/storage/{{$images[4]['img']}}" data-fancybox="gallery">
+                        <img src="/storage/{{$images[4]['thumb']}}" alt="">
                     </a>
                 </div>
 
                 <div class="event-banner__img">
-                    <a href="assets/img/retrits/gallery/6.webp" data-fancybox="gallery">
-                        <img src="assets/img/retrits/6.webp" alt="">
+                    <a href="/storage/{{$images[5]['img']}}" data-fancybox="gallery">
+                        <img src="/storage/{{$images[5]['thumb']}}" alt="">
                     </a>
                 </div>
             </div>
 
             <div class="mobile-img-wrapper">
-                <a href="assets/img/retrits/gallery/1.webp" data-fancybox="gallery">
-                    <img src="assets/img/retrits/1.webp" alt="">
-                </a>
-                <a href="assets/img/retrits/gallery/2.webp" data-fancybox="gallery">
-                    <img src="assets/img/retrits/2.webp" alt="">
-                </a>
-                <a href="assets/img/retrits/gallery/3.webp" data-fancybox="gallery">
-                    <img src="assets/img/retrits/3.webp" alt="">
-                </a>
-                <a href="assets/img/retrits/gallery/4.webp" data-fancybox="gallery">
-                    <img src="assets/img/retrits/4.webp" alt="">
-                </a>
-                <a href="assets/img/retrits/gallery/5.webp" data-fancybox="gallery">
-                    <img src="assets/img/retrits/5.webp" alt="">
-                </a>
-                <a href="assets/img/retrits/gallery/6.webp" data-fancybox="gallery">
-                    <img src="assets/img/retrits/6.webp" alt="">
-                </a>
+                @foreach($images as $image)
+                    <a href="/storage/{{$image['img']}}" data-fancybox="gallery">
+                        <img src="/storage/{{$image['thumb']}}" alt="">
+                    </a>
+                @endforeach
             </div>
         </div>
     </section>
@@ -99,8 +86,7 @@
             <div class="box-container">
                 <div class="content__wrapper">
                     <div class="content__title">
-                        <h2>полная перезагрузка через проработку
-                            мышления и телесные практики</h2>
+                        <h2>{{$pageText['motto']}}</h2>
                     </div>
                 </div>
                 <!-- /.content__wrapper -->
@@ -117,17 +103,14 @@
         <div class="box-container">
             <div class="event-formats__wrapper">
                 <div class="event-formats__text">
-                    <h2>ФОРМАТЫ:</h2>
+                    <h2>FORMATS:</h2>
                     <ul>
-                        <li>
-                            <p>Частные ретриты</p>
-                            <div class="round-selector"></div>
-                        </li>
-
-                        <li>
-                            <p>Корпоративные Ретриты</p>
-                            <div class="round-selector"></div>
-                        </li>
+                        @foreach($services as $service)
+                            <li>
+                                <p>{{$service}}</p>
+                                <div class="round-selector"></div>
+                            </li>
+                        @endforeach
                     </ul>
                 </div>
 

@@ -5,13 +5,13 @@
 @section('content')
     <section class="contacts-block">
         <div class="contacts-block__text">
-            <h1>КОНТАКТЫ</h1>
+            <h1>CONTACT US</h1>
             <div class="contacts-block__text-warpper">
                 <div class="contacts-block__text-warpper-arrow-block">
                     <div class="contacts-block__text-warpper-arrow">
                         <img src="assets/img/arrow-white.svg" alt="">
                     </div>
-                    <p>Хотите организовать запоминающийся эвент или яркое культурное мероприятие? Свяжитесь с нами любым удобным способом или заполните форму обратной связи.</p>
+                    <p>For a memorable event, unique activity or bright ceremony contact us via this feedback form or any other way.</p>
                 </div>
 
                 <div class="contacts-data">
@@ -42,13 +42,13 @@
         <img src="assets/img/contacts-img.webp" alt="" class="contacts-block__mobile-cover">
         <div class="contacts-block__mobile-content">
             <div class="box-container">
-                <h2>КОНТАКТЫ</h2>
+                <h2>CONTACT US</h2>
                 <div class="contacts-block__text-warpper">
                     <div class="contacts-block__text-warpper-arrow-block">
                         <div class="contacts-block__text-warpper-arrow">
                             <img src="assets/img/arrow-white.svg" alt="">
                         </div>
-                        <p>Хотите организовать запоминающийся эвент или яркое культурное мероприятие? Свяжитесь с нами любым удобным способом или заполните форму обратной связи.</p>
+                        <p>For a memorable event, unique activity or bright ceremony contact us via this feedback form or any other way.</p>
                     </div>
 
                     <div class="contacts-data">
@@ -77,20 +77,20 @@
         <div class="box-container">
             <div class="contacts-form-block__wrapper">
                 <form class="contacts-form">
-                    <h2>остались вопросы?</h2>
-                    <p class="subtitle">Заполните форму, и мы вам перезвоним.</p>
+                    <h2>any other questions?</h2>
+                    <p class="subtitle">Fill out the form and we'll call you back.</p>
                     <div class="contacts-form__controls">
                         <div class="contacts-form__input">
-                            <input type="text" name="customer-question" id="customer-question" placeholder="Ваш вопрос">
-                            <p class="hint">Поле вопроса не должно быть пустым!</p>
+                            <input type="text" name="customer-question" id="customer-question" placeholder="Your question">
+                            <p class="hint">The question field should not be empty</p>
                         </div>
                         <div class="contacts-form__input">
-                            <input type="text" name="customer-name" id="customer-name" placeholder="Имя">
-                            <p class="hint">Имя должно быть не менее двух символов!</p>
+                            <input type="text" name="customer-name" id="customer-name" placeholder="Name">
+                            <p class="hint">Enter correct name</p>
                         </div>
                         <div class="contacts-form__input">
-                            <input type="text" name="customer-phone" id="customer-phone" placeholder="Телефон">
-                            <p class="hint">Введите корректный телефон</p>
+                            <input type="text" name="customer-phone" id="customer-phone" placeholder="Phone">
+                            <p class="hint">Enter correct phone</p>
                         </div>
                     </div>
                     <input type="submit" class="send-form" value="Отправить">
