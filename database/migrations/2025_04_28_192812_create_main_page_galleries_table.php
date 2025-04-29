@@ -45,7 +45,7 @@ return new class extends Migration
             [
                 'page_id' => 3,
                 'img_small' => 'images/main-img/festivals/2.webp',
-                'img' => 'images/main-img/festivals/festivals/2.webp'
+                'img' => 'images/main-img/festivals/gallery/2.webp'
             ],
             [
                 'page_id' => 3,
@@ -61,7 +61,7 @@ return new class extends Migration
             [
                 'page_id' => 4,
                 'img_small' => 'images/main-img/sport-events/2.webp',
-                'img' => 'images/main-img/sport-events/festivals/2.webp'
+                'img' => 'images/main-img/sport-events/gallery/2.webp'
             ],
             [
                 'page_id' => 4,
@@ -77,7 +77,7 @@ return new class extends Migration
             [
                 'page_id' => 5,
                 'img_small' => 'images/main-img/family-events/2.webp',
-                'img' => 'images/main-img/family-events/festivals/2.webp'
+                'img' => 'images/main-img/family-events/gallery/2.webp'
             ],
             [
                 'page_id' => 5,
@@ -93,7 +93,7 @@ return new class extends Migration
             [
                 'page_id' => 6,
                 'img_small' => 'images/main-img/retrits/2.webp',
-                'img' => 'images/main-img/retrits/festivals/2.webp'
+                'img' => 'images/main-img/retrits/gallery/2.webp'
             ],
             [
                 'page_id' => 6,
