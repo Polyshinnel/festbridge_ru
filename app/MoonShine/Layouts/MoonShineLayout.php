@@ -37,6 +37,7 @@ use App\MoonShine\Resources\PageTextResource;
 use App\MoonShine\Resources\MainPageTextResource;
 use App\MoonShine\Resources\MainPageImagesResource;
 use App\MoonShine\Resources\MainPageGalleryResource;
+use App\MoonShine\Resources\ContactInfoResource;
 
 final class MoonShineLayout extends AppLayout
 {
@@ -57,6 +58,7 @@ final class MoonShineLayout extends AppLayout
             MenuItem::make('PageTexts', PageTextResource::class),
             ...parent::menu(),
 
+            MenuItem::make('ContactInfos', ContactInfoResource::class),
         ];
     }
 
